@@ -18,8 +18,8 @@ public class TriagleSq {
         Scanner sc2 = new Scanner(System.in);
         float y = sc2.nextFloat();
 
-        double square = 0.5 * (x * y);
-        System.out.println("Square of triangle is " + square + );
+        double square = (x * y) / 2;
+        System.out.println("Square of triangle is " + square);
     }
 
 }
