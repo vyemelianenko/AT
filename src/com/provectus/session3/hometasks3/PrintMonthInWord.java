@@ -1,4 +1,5 @@
 package com.provectus.session3.hometasks3;
+
 import java.util.Scanner;
 
 /**
