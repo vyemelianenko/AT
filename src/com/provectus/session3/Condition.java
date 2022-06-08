@@ -1,7 +1,5 @@
 package com.provectus.session3;
 
-import java.util.Locale;
-
 /**
  * @author Victor Yemelianenko vemelianenko@model.com
  */
@@ -9,19 +7,26 @@ import java.util.Locale;
 public class Condition {
     public static void main(String[] args) {
 
-        String str1 = "Some Text Today";
-        String str2 = null;
+        int cond = 0;
+//        if (cond > 0) {
+//            System.out.println("INSIDE IF");
+//        } else {
+//            System.out.println("inside else");
+//        }
 
-        String result1 = str1.toUpperCase();
-        String result2 = str1.toLowerCase();
+        if (cond >=0) {
+            System.out.println("INSIDE IF1");
+            if (cond >0) {
+                System.out.println("INSIDE IF2");
+            } else {
+                System.out.println("INSIDE ELSE 2");
+            }
+        } else {
+            System.out.println("INSIDE ELSE1");
+        }
 
-        System.out.println(result1);
-        System.out.println(result2);
 
-//        String formatted = String.format("result of %s and %s",result1,result2);
-        String formatted = String.format("result of %s and %d %f",result1 , 5,5.6);
-
-        System.out.println(formatted);
+        System.out.println("AFTER IF");
     }
 
 }
