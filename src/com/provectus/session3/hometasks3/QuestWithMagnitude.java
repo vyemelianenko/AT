@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class QuestWithMagnitude {
     public static void main(String[] args) {
-        //need rework
+
         System.out.println("====================");
         System.out.println("Enter a first value");
 

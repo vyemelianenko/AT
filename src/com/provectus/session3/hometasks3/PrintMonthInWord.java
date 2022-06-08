@@ -44,7 +44,6 @@ public class PrintMonthInWord {
             System.out.println("Not a valid month");
         }
 
-
 //        //Swtich variant > could you please uncomment me
 //        switch (inputMonth) {
 //            case 1:
