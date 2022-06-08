@@ -35,6 +35,7 @@ public class PifagorHowAreDoin {
             System.out.println("It is not a correct triangle");
         }
 
+
         System.out.println("==============");
     }
 }
