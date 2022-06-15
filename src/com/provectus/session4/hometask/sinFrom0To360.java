@@ -6,7 +6,7 @@ package com.provectus.session4.hometask;
 
 public class sinFrom0To360 {
     public static void main(String[] args) {
-        for (int i = 0; i < 361 ; i=i+10) {
+        for (int i = 0; i <= 360 ; i=i+10) {
             System.out.println(Math.toRadians(i));
             System.out.println(i);
         }
