@@ -1,6 +1,4 @@
-package com.provectus.session3;
-
-import java.util.Locale;
+package com.provectus.session2;
 
 /**
  * @author Victor Yemelianenko vemelianenko@model.com

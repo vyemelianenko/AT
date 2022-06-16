@@ -1,4 +1,4 @@
-package com.provectus.session3;
+package com.provectus.session2;
 
 /**
  * @author Victor Yemelianenko vemelianenko@model.com

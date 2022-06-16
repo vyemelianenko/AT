@@ -1,4 +1,4 @@
-package com.provectus.session4.hometask;
+package com.provectus.session3.hometasks;
 
 import java.util.Arrays;
 import java.util.Random;

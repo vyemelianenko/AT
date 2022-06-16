@@ -1,4 +1,4 @@
-package com.provectus.session2.hometasks;
+package com.provectus.session1.hometasks;
 
 /**
  * @author Victor Yemelianenko vemelianenko@model.com
