@@ -19,6 +19,20 @@ public class UITest {
     private static WebDriver getDriver() {
         int random = new Random().nextInt(6);
         WebDriver driver = random % 2 == 0 ? new ChromeDriver() : new GeckoDriver();
+
+
+        /*
+        if (valueFromConfig.equals(*chrome)) {
+        driver = new ChromeDriver();
+        }
+
+        if (valueFromConfig.equals(*firefox)) {
+        driver = new FireFoxDriver();
+        }
+        return driver;
+         */
+
+
         return driver;
     }
 
