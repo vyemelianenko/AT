@@ -35,8 +35,7 @@ public class StaticRunner {
 
         CustomerLoggerCase2.warning("case2222222 warn");
         CustomerLoggerCase2.error("errorrorororororrorororor");
-        CustomerLoggerCase2.debug("debu ggg " +
-                "ggg");
+        CustomerLoggerCase2.debug("debu gggggg");
         CustomerLoggerCase2.info("infofofofofofofoo");
     }
 }
