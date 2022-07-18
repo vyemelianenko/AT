@@ -30,5 +30,12 @@ public class StaticRunner {
         CustomLogger.customLogger(CustomLogger.LoggerLevels.DEBUG,"this is DEBUG");
         CustomLogger.customLogger(CustomLogger.LoggerLevels.ERROR,"this is ERROR");
         CustomLogger.customLogger(CustomLogger.LoggerLevels.INFORMATION,"this is infofofoffofofofofoofof");
+
+        System.out.println("======== case2 ========");
+
+        CustomerLoggerCase2.warning("case2222222 warn");
+        CustomerLoggerCase2.error("errorrorororororrorororor");
+        CustomerLoggerCase2.debug("debugggggg");
+        CustomerLoggerCase2.info("infofofofofofofoo");
     }
 }
