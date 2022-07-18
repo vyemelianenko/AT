@@ -26,5 +26,9 @@ public class StaticRunner {
         System.out.println(ApiConfig.URL);
         System.out.println(ApiConfig.AUTH_HEDEAR);
 
+        CustomLogger.customLogger(CustomLogger.LoggerLevels.WARNING,"this is warning");
+        CustomLogger.customLogger(CustomLogger.LoggerLevels.DEBUG,"this is DEBUG");
+        CustomLogger.customLogger(CustomLogger.LoggerLevels.ERROR,"this is ERROR");
+        CustomLogger.customLogger(CustomLogger.LoggerLevels.INFORMATION,"this is infofofoffofofofofoofof");
     }
 }
