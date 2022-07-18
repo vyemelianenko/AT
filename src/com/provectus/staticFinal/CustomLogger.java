@@ -6,10 +6,10 @@ package com.provectus.staticFinal;
 
 public class CustomLogger {
 
-    public static final String RED_BOLD_BRIGHT = "\033[1;91m";
-    public static final String GREEN_BOLD_BRIGHT = "\033[1;92m";
-    public static final String YELLOW_BOLD_BRIGHT = "\033[1;93m";
-    public static final String BLUE_BOLD_BRIGHT = "\033[1;94m";
+    private static final String RED_BOLD_BRIGHT = "\033[1;91m";
+    private static final String GREEN_BOLD_BRIGHT = "\033[1;92m";
+    private static final String YELLOW_BOLD_BRIGHT = "\033[1;93m";
+    private static final String BLUE_BOLD_BRIGHT = "\033[1;94m";
 
     public static void customLogger(LoggerLevels loggerLevels, String message) {
         switch (loggerLevels) {
