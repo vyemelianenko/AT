@@ -1,13 +1,17 @@
 package com.provectus.staticFinal;
 
+import com.provectus.staticFinal.logger.LevelLogger;
+import com.provectus.staticFinal.logger.MethodLogger;
+
 /**
  * @author Victor Yemelianenko vemelianenko@model.com
  */
 
 public class StaticRunner {
-    public static void main(String[] args) {
+    public static void main(String[] args)  {
         StaticEx staticEx = new StaticEx();
 
+        final LevelLogger LOGGER = new LevelLogger();
         StaticEx staticEx1 = new StaticEx();
 
         staticEx.increseCounter();
@@ -37,5 +41,8 @@ public class StaticRunner {
         CustomerLoggerCase2.error("errorrorororororrorororor");
         CustomerLoggerCase2.debug("debu gggggg");
         CustomerLoggerCase2.info("infofofofofofofoo");
+
+        LOGGER.log(LevelLogger.LogLevel.ERROR,"erorroroororor");
+//        MethodLogger.printMessage(MethodLogger.LogLevel.INFO,"emmme");
     }
 }
