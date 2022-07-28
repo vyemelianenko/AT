@@ -58,4 +58,13 @@ public class Product implements Comparable<Product> {
             return o1.getName().compareTo(o2.getName());
         }
     }
+
+//    @Override public int compareToNamePrice(Product o) {
+//        if (this.name.compareTo(o.name) > 0) return 1;
+//        if (this.name.compareTo(o.name) < 0) return -1;
+//        if (this.name.compareTo(o.name) == 0) {
+//        return this.price > o.price ? 1 : -1;
+//        }
+//        return 0;
+//    }
 }

@@ -45,6 +45,7 @@ public class ShoppingList {
         finalShoppingList.stream().sorted();
         System.out.println(finalShoppingList);
 
+//        System.out.println("shoppingListTavriaV".compareToIgnoreCase("shoppingListKopeyka"));
 
     }
 }

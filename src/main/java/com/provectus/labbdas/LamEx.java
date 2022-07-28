@@ -1,5 +1,7 @@
 package com.provectus.labbdas;
 
+import org.testng.annotations.Test;
+
 import java.util.Locale;
 import java.util.Random;
 import java.util.function.Consumer;
@@ -10,8 +12,8 @@ import java.util.function.Supplier;
 /**
  * @author Victor Yemelianenko vemelianenko@model.com
  */
-
 public class LamEx {
+
     public static void main(String[] args) {
 //        @Override
 //        public void method1() {
