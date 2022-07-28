@@ -1,5 +1,7 @@
 package com.provectus.labbdas;
 
+import org.testng.annotations.Test;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -9,7 +11,7 @@ import java.util.stream.Collectors;
 /**
  * @author Victor Yemelianenko vemelianenko@model.com
  */
-
+@Test
 public class StreamEx {
     public static void main(String[] args) {
         List<String> list = Arrays.asList("","12", "", "45", "17", "", "5");
