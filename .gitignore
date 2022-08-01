@@ -1,1 +1,22 @@
-/out
+*.out
+target/
+
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+# Test binary, built with `go test -c`
+*.test
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+# Dependency directories (remove the comment below to include it)
+vendor/
+
+* is used as a wildcard match *.exe will ignore any file with the .exe extension
+/ will ignore directories with the name. vendor/ ignores the vendor directory.
+# will comment the line
+[…] will ignore values with any of the values.
+*.[abc] ignores files file.a, file.b, file.c.
+*.[a-*.[oa]d] the dash will include a range, in this case, file extensions a-d.
