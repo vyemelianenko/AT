@@ -1,4 +1,4 @@
-package com.provectus.tests;
+package com.provectus.tests.tests;
 
 import org.testng.annotations.Test;
 
