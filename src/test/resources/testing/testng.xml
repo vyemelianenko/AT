@@ -1,29 +1,47 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
 <suite name="Suite1" verbose="1">
-    <test name="Nopackage">
-        <parameter name="testParam" value="testValue"></parameter>
+    <test name="AT">
+
+        <parameter name="paramTest" value="this is sparta"/>
+        <parameter name="paramTest2" value="this2 is sparta2"/>
+
+        <groups>
+            <run>
+                <include name="group1"/>
+                <include name="group2"/>
+            </run>
+        </groups>
+
         <classes>
-            <class name="com.provectus.tests.tests.Before3"/>
-<!--            <class name="com.provectus.tests.TestEx"/>-->
+            <class name="homeTasks.TestNG.UserDataForNGCustom"/>
+            <class name="homeTasks.TestNG.ParamTest"/>
+
         </classes>
+
+        <groups>
+            <dependencies>
+                <group name="group2" depends-on="group1"/>
+            </dependencies>
+        </groups>
+
     </test>
 
 
-<!--    <test name="Regression1">-->
-<!--        <classes>-->
-<!--            <class name="com.provectus.tests.TestEx"/>-->
-<!--        </classes>-->
-<!--&lt;!&ndash;        &lt;!&ndash;        бере все зі сюту com.provectus.tests поміченим @Test&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;        <packages>&ndash;&gt;-->
-<!--&lt;!&ndash;            <package name="com.provectus.tests.auth"></package>&ndash;&gt;-->
-<!--&lt;!&ndash;            <package name="com.provectus.tests.catalog"></package>&ndash;&gt;-->
-<!--&lt;!&ndash;            <package name="com.provectus.tests.products"></package>&ndash;&gt;-->
-<!--&lt;!&ndash;        </packages>&ndash;&gt;-->
-<!--    </test>-->
+    <!--    <test name="Regression1">-->
+    <!--        <classes>-->
+    <!--            <class name="com.provectus.tests.TestEx"/>-->
+    <!--        </classes>-->
+    <!--&lt;!&ndash;        &lt;!&ndash;        бере все зі сюту com.provectus.tests поміченим @Test&ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;        <packages>&ndash;&gt;-->
+    <!--&lt;!&ndash;            <package name="com.provectus.tests.auth"></package>&ndash;&gt;-->
+    <!--&lt;!&ndash;            <package name="com.provectus.tests.catalog"></package>&ndash;&gt;-->
+    <!--&lt;!&ndash;            <package name="com.provectus.tests.products"></package>&ndash;&gt;-->
+    <!--&lt;!&ndash;        </packages>&ndash;&gt;-->
+    <!--    </test>-->
 
-<!--    <suite-files>-->
-<!--        <suite-file path="catalog.xml "></suite-file>-->
-<!--        <suite-file path="auth.xml "></suite-file>-->
-<!--    </suite-files>-->
+    <!--    <suite-files>-->
+    <!--        <suite-file path="catalog.xml "></suite-file>-->
+    <!--        <suite-file path="auth.xml "></suite-file>-->
+    <!--    </suite-files>-->
 </suite>
