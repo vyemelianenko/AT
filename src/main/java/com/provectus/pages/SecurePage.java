@@ -19,7 +19,7 @@ public class SecurePage extends BasePage {
     @FindBy(tagName = "h2")
     private WebElement pageTitle;
 
-    @FindBy(css=".flash.succes")
+    @FindBy(css=".flash.success")
     private WebElement alert;
 //    private WebDriver driver;
 

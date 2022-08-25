@@ -3,6 +3,9 @@ package com.provectus.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 
 /**
  * @author Victor Yemelianenko vemelianenko@model.com
@@ -15,10 +18,15 @@ public class LoginPage extends BasePage {
 
     private final By byPassword = By.id("password");
 
-    private final By byLoginButton = By.cssSelector("button[type='submit']");
+    @FindBy(css="button[type='submit']")
+    private WebElement byLoginButton;
+
+    @FindBy(css=".flash.error")
+    private WebElement errorMessage;
 
     public LoginPage(WebDriver driver) {
         super(driver);
+        PageFactory.initElements(driver,this);
     }
 
     public LoginPage setUsername(String username) {
@@ -36,12 +44,12 @@ public class LoginPage extends BasePage {
     }
 
     public SecurePage clickLoginButton() {
-        driver.findElement(byLoginButton).click();
+        byLoginButton.click();
         return new SecurePage(driver);
     }
 
-    public LoginPage clickLoginWithIncorrectCreds() {
-        driver.findElement(byLoginButton).click();
+    public LoginPage clickLoginWithIncorrectCreds() throws InterruptedException {
+        byLoginButton.click();
         return new LoginPage(driver);
     }
 
@@ -49,6 +57,15 @@ public class LoginPage extends BasePage {
         setUsername(username);
         setPassword(password);
         return clickLoginButton();
+    }
+
+    public String verifyErrorMessage() {
+        return errorMessage.getText();
+    }
+
+    public LoginPage logout(){
+        byLoginButton.click();
+        return new LoginPage(driver);
     }
 
 }

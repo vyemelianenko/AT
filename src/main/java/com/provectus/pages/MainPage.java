@@ -1,18 +1,13 @@
 package com.provectus.pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 
 /**
  * @author Victor Yemelianenko vemelianenko@model.com
  */
 
-public class MainPage extends BasePage{
+public class MainPage extends BasePage {
 //    private WebDriver driver;
 //
 //    private WebDriverWait wait;
@@ -33,7 +28,13 @@ public class MainPage extends BasePage{
         return new LoginPage(driver);
     }
 
-    public void goToDynControls() {
-        driver.findElement(By.linkText("Dynamic Controls")).click();
+    public DomPage goToDomPage() {
+        driver.findElement(By.linkText("Challenging DOM")).click();
+        return new DomPage(driver);
+    }
+
+    public HoverIconPage goToHoversPage() {
+        driver.findElement(By.linkText("Hovers")).click();
+        return new HoverIconPage(driver);
     }
 }
