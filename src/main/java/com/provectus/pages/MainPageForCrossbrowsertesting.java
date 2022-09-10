@@ -9,8 +9,8 @@ import org.openqa.selenium.WebDriver;
 
 public class MainPageForCrossbrowsertesting extends BasePage {
 
-    public MainPageForCrossbrowsertesting(WebDriver driver) {
-        super(driver); //виклик родителя конструтора
+    public MainPageForCrossbrowsertesting() {
+        super(); //виклик родителя конструтора
     }
 
     public DragAndDropPage goToDragAndDropPage() {

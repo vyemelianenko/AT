@@ -25,9 +25,10 @@ public class LoginPage extends BasePage {
     private WebElement errorMessage;
 
     public LoginPage(WebDriver driver) {
-        super(driver);
+        super();
         PageFactory.initElements(driver,this);
     }
+
 
     public LoginPage setUsername(String username) {
         WebElement usernameInput = driver.findElement(byUsername);
@@ -45,7 +46,7 @@ public class LoginPage extends BasePage {
 
     public SecurePage clickLoginButton() {
         byLoginButton.click();
-        return new SecurePage(driver);
+        return new SecurePage( driver);
     }
 
     public LoginPage clickLoginWithIncorrectCreds() throws InterruptedException {

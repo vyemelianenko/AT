@@ -29,7 +29,7 @@ public class CrossbrowsertestingTest {
 
     public MainPageForCrossbrowsertesting openApp() {
         driver.get("https://crossbrowsertesting.github.io");
-        return new MainPageForCrossbrowsertesting(driver);
+        return new MainPageForCrossbrowsertesting();
     }
 
 }

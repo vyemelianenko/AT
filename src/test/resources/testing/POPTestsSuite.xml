@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="POP Regression" parallel="false" thread-count="1" verbose="1">
+    <test name="POP Rebates Regression cycle - POP" preserve-order="true">
+        <classes>
+            <class name="homeTasks.pageObjectPattern.POPCLickToEachButton"/>
+            <class name="homeTasks.pageObjectPattern.POPCorrectLogin"/>
+            <class name="homeTasks.pageObjectPattern.POPDragAndDrop"/>
+            <class name="homeTasks.pageObjectPattern.POPHoversTest"/>
+            <class name="homeTasks.pageObjectPattern.POPIncorrectLogin"/>
+            <class name="homeTasks.pageObjectPattern.POPSecondaryActionTest"/>
+        </classes>
+    </test>
+</suite>
+

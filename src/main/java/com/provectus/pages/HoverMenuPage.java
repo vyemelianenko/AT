@@ -27,7 +27,7 @@ public class HoverMenuPage extends BasePage {
     private WebElement secondaryActionMessage;
 
     public HoverMenuPage(WebDriver driver) {
-        super(driver);
+        super();
         PageFactory.initElements(driver, this);
     }
 

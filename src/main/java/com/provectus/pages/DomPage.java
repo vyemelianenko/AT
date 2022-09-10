@@ -25,7 +25,7 @@ public class DomPage extends BasePage {
     private WebElement buttonGreenFoo;
 
     public DomPage(WebDriver driver) {
-        super(driver);
+        super();
         PageFactory.initElements(driver, this);
     }
 

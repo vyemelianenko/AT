@@ -1,5 +1,6 @@
 package com.provectus.pages;
 
+import com.provectus.singleTon.DriverHoler;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -17,8 +18,8 @@ public abstract class BasePage {
     protected Actions actions;
     protected JavascriptExecutor javascriptExecutor;
 
-    public BasePage(WebDriver driver) {
-        this.driver = driver;
+    public BasePage() {
+        this.driver = DriverHoler.getDriver();
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         this.actions = new Actions(driver);
         this.javascriptExecutor = (JavascriptExecutor) driver;

@@ -19,7 +19,11 @@ public class MainPage extends BasePage {
 //        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 //        this.actions = new Actions(driver);
 //        this.javascriptExecutor = (JavascriptExecutor) driver;
-        super(driver); //виклик родителя конструтора
+        super(); //виклик родителя конструтора
+
+    }
+
+    public MainPage() {
 
     }
 
@@ -36,5 +40,20 @@ public class MainPage extends BasePage {
     public HoverIconPage goToHoversPage() {
         driver.findElement(By.linkText("Hovers")).click();
         return new HoverIconPage(driver);
+    }
+
+    public DynamicControlPage goToDynamicControlPage() {
+        driver.findElement(By.linkText("Dynamic Controls")).click();
+        return new DynamicControlPage(driver);
+    }
+
+    public DownloadPage goToDownloadPage() {
+        driver.findElement(By.linkText("File Download")).click();
+        return new DownloadPage();
+    }
+
+    public UploadPage goToUploadPage() {
+        driver.findElement(By.linkText("File Upload")).click();
+        return new UploadPage();
     }
 }
