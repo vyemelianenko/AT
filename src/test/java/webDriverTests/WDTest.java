@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 /**
  * @author Victor Yemelianenko vemelianenko@model.com
@@ -20,16 +21,21 @@ public class WDTest {
 
         WebDriver driver = new ChromeDriver();
         driver.get("https://google.com");
+        SoftAssert softAssert = new SoftAssert();
+
 //        driver.switchTo().alert().accept();
 
         driver.switchTo().frame(1);
+        softAssert.assertEquals(driver.getTitle(),"PAge title");
         //search inside frame
 
         driver.switchTo().defaultContent();
+
         //search on the main page
 
         driver.navigate().refresh();
         driver.manage().window().maximize();
+        softAssert.assertEquals(driver.findElement(By.tagName("a")),"incorrect tagName");
 
         driver.findElement(By.id("id"));
         driver.findElement(By.name("name"));
@@ -46,6 +52,8 @@ public class WDTest {
         element.click(); //right button click
         element.isDisplayed(); // isEnebale isSelected-  відображається елемент на страниці
 //        driver.findElement()
+
+        softAssert.assertAll();
         driver.quit();
     }
 }

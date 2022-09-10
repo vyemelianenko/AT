@@ -24,7 +24,7 @@ public class SecurePage extends BasePage {
 //    private WebDriver driver;
 
     public SecurePage(WebDriver driver) {
-        super(driver);
+        super();
         PageFactory.initElements(driver,this);
     }
 

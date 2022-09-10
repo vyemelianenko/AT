@@ -24,7 +24,7 @@ public class HoverIconPage extends BasePage {
     private WebElement user3;
 
     public HoverIconPage(WebDriver driver) {
-        super(driver);
+        super();
         PageFactory.initElements(driver, this);
     }
 

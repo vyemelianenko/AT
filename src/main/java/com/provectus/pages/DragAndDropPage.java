@@ -22,7 +22,7 @@ public class DragAndDropPage extends BasePage {
     WebElement successfullyMessage;
 
     public DragAndDropPage(WebDriver driver) {
-        super(driver);
+        super();
         PageFactory.initElements(driver, this);
     }
 

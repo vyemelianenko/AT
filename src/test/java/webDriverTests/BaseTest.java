@@ -1,6 +1,7 @@
 package webDriverTests;
 
 import com.provectus.pages.MainPage;
+import com.provectus.singleTon.DriverHoler;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,23 +13,24 @@ import org.testng.annotations.BeforeTest;
  */
 
 public class BaseTest {
-    protected WebDriver driver;
+//    protected WebDriver driver;
 
     @BeforeTest
     public void setUp() {
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver();
         driver.get("https://the-internet.herokuapp.com");
+        DriverHoler.setDriver(driver);
     }
 
     @AfterClass
     public void tearDown() {
-        driver.quit();
+        DriverHoler.getDriver().quit();
     }
 
     public MainPage openApp() {
-        driver.get("https://the-internet.herokuapp.com");
-        return new MainPage(driver);
+        DriverHoler.getDriver().get("https://the-internet.herokuapp.com");
+        return new MainPage();
     }
 
 }

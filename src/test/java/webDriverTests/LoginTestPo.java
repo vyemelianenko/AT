@@ -28,6 +28,7 @@ public class LoginTestPo extends BaseTest {
         String alert = securePage.getAlertText();
 
         Assert.assertTrue(alert.contains("You logged into a secure area!"), "User should be logged in");
+        Assert.assertEquals(alert,"You logged into a secure area!","The error");
         securePage.logout();
 
 //        LoginPage loginPage = new LoginPage(driver);
