@@ -56,4 +56,10 @@ public class MainPage extends BasePage {
         driver.findElement(By.linkText("File Upload")).click();
         return new UploadPage();
     }
+
+    public DynamicLoadingPage goToDynamicLoadingPage() {
+        driver.findElement(By.linkText("Dynamic Loading")).click();
+        return new DynamicLoadingPage();
+    }
+
 }
