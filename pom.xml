@@ -46,6 +46,13 @@
             <artifactId>webdrivermanager</artifactId>
             <version>5.2.1</version>
         </dependency>
+
+        <!--selenide -->
+        <dependency>
+            <groupId>com.codeborne</groupId>
+            <artifactId>selenide</artifactId>
+            <version>6.7.4</version>
+        </dependency>
     </dependencies>
 
 <!--    <build>-->
